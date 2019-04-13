@@ -6,66 +6,13 @@
              android:background="@android:color/black"
              android:orientation="vertical">
 
-    <FrameLayout
-            android:id="@+id/qr_layout"
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+            android:id="@+id/qr_view_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="visible">
+            android:visibility="visible"/>
 
 
-        <me.dm7.barcodescanner.zxing.ZXingScannerView
-                android:id="@+id/qr_view_id"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="visible"/>
-
-        <Button
-                android:id="@+id/cancel_button"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_gravity="center|bottom"
-                android:layout_marginBottom="20dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginStart="50dp"
-                android:text="@string/cancel"
-                android:background="#ffffff"
-                style="?android:attr/borderlessButtonStyle"
-                android:textAllCaps="false"
-                android:textSize="@dimen/normal_text"/>
-
-    </FrameLayout>
-
-
-    <LinearLayout
-            android:id="@+id/info_view_id"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:visibility="gone">
-
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/dp_20"
-                android:gravity="center"
-                android:text="@string/camera_location_text"
-                android:textColor="@android:color/white"/>
-
-        <Button
-                android:id="@+id/enable_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/dp_20"
-                android:text="@string/enable"
-                android:background="@color/white"
-                style="?android:attr/borderlessButtonStyle"
-                android:textAllCaps="false"
-                android:visibility="visible"/>
-    </LinearLayout>
 </FrameLayout>
 
 

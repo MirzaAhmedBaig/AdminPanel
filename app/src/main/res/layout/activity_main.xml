@@ -11,7 +11,7 @@
             android:id="@+id/file_name"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:hint="Enter File name"
+            android:hint="Enter student email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
